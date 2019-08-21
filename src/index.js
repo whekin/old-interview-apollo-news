@@ -13,8 +13,6 @@ const httpLink = createHttpLink({
   uri: 'http://localhost:4000'
 });
 
-globalThis.innerWidth;
-
 const client = new ApolloClient({
   link: httpLink,
   cache: new InMemoryCache()
